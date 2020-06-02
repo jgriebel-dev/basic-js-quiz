@@ -33,7 +33,7 @@ if ( correctAnswers === 5 ) {
     playerRank = 'Gold';
 } else if ( correctAnswers >= 3) {
     playerRank = 'Silver';
-} else if ( correctAnswers >= 1) {
+} else if ( correctAnswers >= 2) {
     playerRank = 'Bronze';
 } else {
     playerRank = 'You Lost';
