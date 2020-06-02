@@ -1,30 +1,31 @@
 let correctAnswers = 0;
 
 let playerRank;
+const main = document.querySelector('main');
 
 
 
-const answer1 = 'Who is Doug Dimmadome?';
+const answer1 = prompt('Who is Doug Dimmadome?');
 if ( answer1.toUpperCase() === 'MOMMY' ) {
     return correctAnswers += 1
 };
 
-const answer2 = 'How many dogs are there';
+const answer2 = prompt('How many dogs are there');
 if ( answer2.toUpperCase() === 'FOUR') {
     return correctAnswers += 1
 };
 
-const answer3 = 'Why arent there them?';
+const answer3 = prompt('Why arent there them?');
 if (answer3.toUpperCase() === 'YES') {
     return correctAnswers += 1
 };
 
-const answer4 = 'where are they now because them?'; 
+const answer4 = prompt('where are they now because them?'); 
 if ( answer4.toUpperCase() === 'GARP') {
     return correctAnswers += 1
 };
 
-const answer5 = 'Forp?';
+const answer5 = prompt('Forp?');
 if ( answer5.toUpperCase() === 'FORP') {
     return correctAnswers += 1
 };
@@ -39,7 +40,8 @@ if ( correctAnswers === 5 ) {
     playerRank = 'You Lost';
 }
 
+main.innerHTML = `<h1>you got ${correctAnswers} right</h1>
+                 <p>you earned ${playerRank}</p>`
 
 
 
-const main = document.querySelector('main');
